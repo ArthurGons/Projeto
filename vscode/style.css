@@ -122,7 +122,7 @@ ul li a{
    transition:background 0.2s;
 }
 ul li a:hover{
-    background:var(--surface-color-hover)
+    background:var(--surface-color-hover);
     border:1.5px solid var(--text-color);
     
 }
@@ -156,7 +156,7 @@ ul li a:hover{
       
         
     }
-    @media{(min: width 700px;)
+    @media{(min: width 700px);
         
         :root{--bg-url:url(./assets/bg.jpg)};
 
