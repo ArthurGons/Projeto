@@ -153,3 +153,9 @@ ul li a:hover{
       
         
     }
+    @media{(min: width 700px;)
+        
+        :root{--bg-url:url(./assets/bg.jpg)};
+
+        .light{--bg-url:url(./assets/bg-light.jpg)};
+    }
