@@ -75,6 +75,7 @@ color:var(--text-color);}
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    animation: slide-back 0.3s;
 
 
 }
@@ -90,11 +91,13 @@ color:var(--text-color);}
     border-radius:9999px;
    
 }
-.light #switch button{
-    right: 0;
-    left: initial;
+.light #switch button{animation: slide-in 0.3s forwards;
 }
 
+#switch button:hover{
+    outline: 8px solid var(--highlight-color);
+
+}
 
 /* links */
 ul{list-style: none;
@@ -158,4 +161,12 @@ ul li a:hover{
         :root{--bg-url:url(./assets/bg.jpg)};
 
         .light{--bg-url:url(./assets/bg-light.jpg)};
+    }
+    @keyframes slide-in{
+        from{left:0}
+        to{left:50%}
+    }
+    @keyframes slide-back{
+        from{left:50%}
+        to{left:0}
     }
